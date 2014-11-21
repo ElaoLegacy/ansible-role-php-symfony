@@ -1,0 +1,4 @@
+---
+
+elao_php_symfony:
+  - { version: 1.4.20, install_path: "/usr/local/share/symfony" }

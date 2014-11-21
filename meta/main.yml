@@ -1,0 +1,22 @@
+---
+
+dependencies:
+
+  - { role: elao.php }
+
+galaxy_info:
+
+  author:              elao
+  description:         A role to install symfony v1.X lib on your box
+  company:             elao
+  license:             MIT
+  min_ansible_version: 1.7.0
+  platforms:
+    - name: Debian
+  versions:
+    - wheezy
+  categories:
+    - development
+    - web
+    - symfony
+    - php
