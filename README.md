@@ -1,7 +1,7 @@
-Ansible Role - Projects
+Ansible Role - Symfony
 =======================
 
-A role to install symfony v1.X lib on your box
+A role to install symfony v1.X lib on your boxes !
 
 
 Requirements
