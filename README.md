@@ -22,13 +22,12 @@ Example Playbook
 ----------------
 
     - hosts: webservers
-      vars:
-        elao_php_symfony:
-          -
-            { version: 1.4.20, install_path: "/usr/local/share/symfony" }
-            { version: 1.0.22, install_path: "/usr/local/share/symfony" }
-      roles:
-         - { role: elao.php-symfony }
+        vars:
+            elao_php_symfony:
+                - { version: 1.4.20, install_path: "/usr/local/share/symfony" }
+                - { version: 1.0.22, install_path: "/usr/local/share/symfony" }
+            roles:
+                - { role: elao.php-symfony }
 
 
 License

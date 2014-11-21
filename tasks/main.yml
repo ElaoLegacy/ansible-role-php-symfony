@@ -13,11 +13,8 @@
   sudo: yes
 
 - name:  Installing Symfony
-  shell: "tar xfz /tmp/symfony-{{ item.version }}.tgz --strip-components=1 -C {{ item.install_path }}/{{ item.version }}"
-  with_items: elao_php_symfony
-  sudo: yes
-
-- name: Cleaning
-  shell: "rm -rf /tmp/symfony-{{ item.version }}.tgz"
+  shell: > 
+    tar xfz /tmp/symfony-{{ item.version }}.tgz --strip-components=1 -C {{ item.install_path }}/{{ item.version }}
+    creates="{{ item.install_path }}/{{ item.version }}"
   with_items: elao_php_symfony
   sudo: yes
