@@ -4,17 +4,20 @@
     state=directory
     owner=root
     group=root
-  with_items: elao_php_symfony
+  with_items: 
+    - "{{ elao_php_symfony }}"
   sudo: yes
 
 - name: Getting Symfony
   get_url: url="http://pear.symfony-project.com/get/symfony-{{ item.version }}.tgz" dest="/tmp"
-  with_items: elao_php_symfony
+  with_items: 
+    - "{{ elao_php_symfony }}"
   sudo: yes
 
 - name:  Installing Symfony
   shell: > 
     tar xfz /tmp/symfony-{{ item.version }}.tgz --strip-components=1 -C {{ item.install_path }}/{{ item.version }}
-    creates="{{ item.install_path }}/{{ item.version }}"
-  with_items: elao_php_symfony
+    creates="{{ item.install_path }}/{{ item.version }}/README"
+  with_items: 
+    - "{{ elao_php_symfony }}"
   sudo: yes
