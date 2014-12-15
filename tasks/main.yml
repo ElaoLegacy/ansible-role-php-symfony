@@ -1,3 +1,5 @@
+---
+
 - name: symfony sources 
   file: >
     path={{ item.install_path }}/{{ item.version }}
