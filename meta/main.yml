@@ -2,7 +2,7 @@
 
 dependencies:
 
-  - { role: elao.php }
+  - { role: elao.base }
 
 galaxy_info:
 
